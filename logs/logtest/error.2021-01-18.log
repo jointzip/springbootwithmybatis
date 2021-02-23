@@ -1,0 +1,1 @@
+2021-01-18  21:02:02.082 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'html5' is deprecated. Using Template Mode 'HTML' instead.
