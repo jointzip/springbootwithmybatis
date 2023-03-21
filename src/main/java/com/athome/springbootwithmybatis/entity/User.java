@@ -1,7 +1,6 @@
 package com.athome.springbootwithmybatis.entity;
 
-import lombok.Data;
-import org.apache.ibatis.type.Alias;
+import lombok.*;
 
 /**
  * @Author:Zhaopo
@@ -9,7 +8,10 @@ import org.apache.ibatis.type.Alias;
  * @Description:
  */
 @Data
-//@Alias("User")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class User {
     private Integer id;
     private String userName;

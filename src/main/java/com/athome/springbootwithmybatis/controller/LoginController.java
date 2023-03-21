@@ -4,6 +4,8 @@ import com.athome.springbootwithmybatis.entity.User;
 import com.athome.springbootwithmybatis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -30,8 +32,8 @@ public class LoginController {
 
     //登录操作
     @ResponseBody
-    @RequestMapping("/loginUser")
-    public String login(User user, HttpServletRequest request){
+    @PostMapping("/loginUser")
+    public String login(@RequestBody User user, HttpServletRequest request){
         String userName = user.getUserName();
         String passWord = user.getPassWord();
         User currentUser =  userService.login(userName, passWord);

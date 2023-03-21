@@ -16,6 +16,11 @@ public class UserService {
 
     public User login(String userName, String passWord) {
         return userMapper.login(userName, passWord);
+//        // todo: 1. 对象方式
+//        User user = new User();
+//        user.setUserName(userName);
+//        user.setPassWord(passWord);
+//        return userMapper.login(user);
     }
 
     public int register(User user) {

@@ -19,12 +19,12 @@
         update user set `userName` = #{userName}, `passWord` = #{passWord} where id = #{id}
     </update>
 
-<!--    <select id="selectById" resultType="com.athome.springbootwithmybatis.entity.User">-->
-<!--        select * from user where id = #{id}-->
-<!--    </select>-->
-
     <select id="login" resultType="com.athome.springbootwithmybatis.entity.User">
         select * from user where userName = #{userName} and passWord = #{passWord}
     </select>
+
+<!--    <select id="login" parameterType="com.athome.springbootwithmybatis.entity.User" resultType="com.athome.springbootwithmybatis.entity.User">-->
+<!--        select * from user where userName = #{userName} and passWord = #{passWord}-->
+<!--    </select>-->
 
 </mapper>
