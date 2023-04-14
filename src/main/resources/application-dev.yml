@@ -1,10 +1,13 @@
 server:
   port: 9090
 
+  servlet:
+    context-path: /
+
 spring:
   datasource:
     username: root
-    password:
+    password: root
     url: jdbc:mysql://localhost:3306/springbootwithmybatis?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
   thymeleaf:
@@ -12,9 +15,10 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
     encoding: utf-8
-    mode: html5
+    mode: html
     servlet:
       content-type: text/html
+    enabled: true
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

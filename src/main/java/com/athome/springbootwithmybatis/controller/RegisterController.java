@@ -3,8 +3,12 @@ package com.athome.springbootwithmybatis.controller;
 import com.athome.springbootwithmybatis.entity.User;
 import com.athome.springbootwithmybatis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * @Author:Zhaopo
@@ -19,8 +23,8 @@ public class RegisterController {
 
     //跳转注册页
     @RequestMapping("/toRegister")
-    public String toRegister(){
-        return "register";
+    public void toRegister(HttpServletResponse response) throws IOException {
+        response.sendRedirect("register.html");
     }
 
     //注册操作
