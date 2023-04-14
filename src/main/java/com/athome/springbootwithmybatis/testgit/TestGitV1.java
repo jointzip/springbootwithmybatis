@@ -12,5 +12,9 @@ public class TestGitV1 {
         System.out.println("add之后修改的部分");
         System.out.println("工作区修改提交到暂存区");
         System.out.println("仅修改master");
+        System.out.println("创建新分支feature之后的第一次提交");
+        System.out.println("创建新分支bug之后的第一次提交");
+        System.out.println("创建新分支feature之后的第二次提交");
+        System.out.println("创建新分支test之后的第一次提交");
     }
 }
