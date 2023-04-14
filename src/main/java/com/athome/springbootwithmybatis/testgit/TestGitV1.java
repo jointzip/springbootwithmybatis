@@ -10,5 +10,6 @@ public class TestGitV1 {
         System.out.println("测试暂存区stage");
         System.out.println("测试工作区的修改");
         System.out.println("add之后修改的部分");
+        System.out.println("工作区修改提交到暂存区");
     }
 }
