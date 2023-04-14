@@ -14,5 +14,6 @@ public class TestGitV1 {
         System.out.println("创建新分支feature之后的第一次提交");
         System.out.println("创建新分支bug之后的第一次提交");
         System.out.println("创建新分支feature之后的第二次提交");
+        System.out.println("创建新分支test之后的第一次提交");
     }
 }
