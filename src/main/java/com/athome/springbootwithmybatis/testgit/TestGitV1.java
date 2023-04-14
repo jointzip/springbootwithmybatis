@@ -8,5 +8,6 @@ public class TestGitV1 {
         System.out.println("第一次提交");
         System.out.println("回退之前的最后一次版本");
         System.out.println("测试暂存区stage");
+        System.out.println("测试工作区的修改");
     }
 }
